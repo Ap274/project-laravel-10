@@ -43,7 +43,7 @@ class ProdutosController extends Controller
             $data['valor'] = $componentes->formatacaoMascaraDinheiroDecimal($data['valor']);
             Produto::create($data);
             
-            Toastr::success('Gravado com sucesso!');
+            Toastr::success('Cadastro realizado com sucesso!');
             return redirect()->route('produto.index');
         }
         // mostrar os dados
